@@ -1,16 +1,4 @@
 #!/usr/bin/env python3
-"""
-DocumentDB Failover Test Client - Read/Write Workload
-
-This script performs both write and read operations against a DocumentDB replica set
-to measure the differential impact of failover on different operation types.
-
-Key metrics:
-- Write operations (must go to primary) - expect downtime during failover
-- Read operations (can use replicas) - may continue during failover
-- Comparative analysis of read vs write availability
-"""
-
 from pymongo import MongoClient
 from pymongo.errors import (
     ConnectionFailure,
@@ -147,7 +135,6 @@ class ReadWriteFailoverTest:
         start_time = time.time()
 
         try:
-            # Gateway routes reads - may continue during failover depending on implementation
             count = self.collection.count_documents({})
             latency = (time.time() - start_time) * 1000  # Convert to ms
 
