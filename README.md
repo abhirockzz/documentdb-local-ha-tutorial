@@ -2,15 +2,15 @@
 
 This repository contains resources to demonstrate automatic failover in a [DocumentDB](https://github.com/documentdb/documentdb) cluster using the [DocumentDB Kubernetes Operator](https://github.com/documentdb/documentdb-kubernetes-operator).
 
-![DocumentDB HA design](https://raw.githubusercontent.com/documentdb/documentdb-kubernetes-operator/refs/heads/main/docs/designs/upgrade-design/documentdb-singlenode-localha.png)
+![DocumentDB on k8s](cover.png)
 
 Database high availability is critical for production workloads. When the primary database instance fails, your application needs automatic recovery without manual intervention. This tutorial demonstrates how DocumentDB's local HA feature handles primary failures with minimal downtime and no/minimal client reconfiguration.
 
 📖 **For complete setup instructions, architecture details, and step-by-step guidance, read the full blog post:**
 
-**[DocumentDB on Kubernetes: Resilient, Highly Available Databases with Automatic Failover](#)** _(link coming soon)_
+https://dev.to/abhirockzz/documentdb-on-kubernetes-resilient-highly-available-databases-with-automatic-failover-ak7
 
-The blog post covers the architecture overview and how failover works, includes a detailed walkthrough with expected outputs, and explains automatic recovery.
+☝️ The blog post covers the architecture overview and how failover works, includes a detailed walkthrough with expected outputs, and explains automatic recovery.
 
 ## Learn More
 
